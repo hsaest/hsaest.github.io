@@ -181,6 +181,10 @@ body {
   grid-gap: 0.9rem;
 }
 
+.url {
+  color: #3063ba;
+}
+
 .card .project-bio p {
   font-size: 0.83rem;
 }
