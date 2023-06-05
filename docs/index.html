@@ -84,6 +84,18 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      .tooltip-inner {
+          background-color: #000000;
+          color: #ffffff;
+          border: 2px solid #f7f7f7; 
+          border-radius: 5px;
+          font-size: 12px;
+      }
+  </style>
   </head>
   <body>
     <header id="hero">
@@ -98,14 +110,14 @@
           </h1>
           <!-- Navbar links -->
           <ul class="nav-menu">
-            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link" href="#">CONTACT</a></li>
-            <li><a class="nav-link" href="#">BlOG</a></li>
+            <li><a class="nav-link" href="">NEWS</a></li>
+            <li><a class="nav-link" href="#projects">PUBLICATIONS</a></li>
+            <!-- <li><a class="nav-link" href="#">BlOG</a></li> -->
             <li>
               <a
                 class="nav-link btn btn-primary"
                 href="https://github.com/CommunityPro/portfolio-html"
-                >RESUME <i class="fas fa-arrow-right"></i
+                >Resume <i class="fas fa-arrow-right"></i
               ></a>
             </li>
 
@@ -133,17 +145,27 @@
           src="assets/xiejian_profile.png"
           alt=""
         />
-        <h2>Hi I'm Jian Xie (谢健)</h2>
-
+        <h2>Jian Xie</h2>
+        <div class="container">
+          <!-- Social links -->
+          <div class="social">
+            <a href="mailto:jianx0321@gmail.com" target="_blank"><img src="./assets/email-icon.svg" alt="Email" /></a>
+            <a href="https://github.com/hsaest" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+            <a href="https://scholar.google.com/citations?user=8s-XawsAAAAJ&hl=zh-CN" target="_blank"><img src="./assets/googlescholar-icon.svg" alt="GitHub" /></a>
+            <a href="https://twitter.com/hsaest" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
+          </div>
+        </div>
         <div class="content-text">
           <!-- <h2></h2>
           <h2></h2> -->
 
           <p>
-           I am a first-year master at Fudan University in School of Computer Science, Shanghai, China.
+           I am Jian Xie (谢健), a first-year master at Fudan University in School of Computer Science, Shanghai, China.
+           I am advised by <a href="https://scholar.google.com/citations?user=odFW4FoAAAAJ&hl=en&oi=ao", class="url">Prof. Yanghua Xiao</a> at <a href="http://kw.fudan.edu.cn/", class="url">Knowledge Works Lab</a> and <a href="https://ysu1989.github.io/", class="url">Prof. Yu Su</a> at the The Ohio State University.
           </p>
+
           <p>
-            I am advised by <a href="https://scholar.google.com/citations?user=odFW4FoAAAAJ&hl=en&oi=ao", class="url">Prof. Yanghua Xiao</a> at <a href="http://kw.fudan.edu.cn/", class="url">Knowledge Works Lab</a>.
+            I have a broad interest in Natural Language Processing, with a current focus on Large Language Models and their potential hazards. I am fascinated by the capabilities and challenges associated with these models, particularly in areas such as understanding, generation, and ethical considerations.
           </p>
         </div>
         <a
@@ -156,115 +178,138 @@
     </header>
 
     <!-- Projects -->
-    <section id="projects" class="project-container container">
-      <div class="division"></div>
-      <div class="content-text">
-        <h2>Works</h2>
-        <p>Check out some of my personal and paid projects</p>
-      </div>
+    <section id="projects" class="container">
+      <h2 class="head-text">
+        Featured Publications<span class="underline underline-secondary"></span>
+      </h2>
 
-      <article class="project">
-        <!-- Project 1 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Project One</h3>
-              <p>React, Redux, SASS</p>
-            </div>
+      <div id="project-full">
+       <!-- Page 1 -->
+        <article class="project-content">
+          <div class="project-image project-image-one">
+            <img
+              src="../assets/project/project-1.png"
+              alt="Hashnode Clone"
+            />
+            <!-- <a
+              class="btn btn-one"
+              href="https://hashnode-clone-sass.netlify.app/"
+              target="_blank"
+              >Preview Link</a
+            > -->
+          </div>
 
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+          <div class="card-content">
+            <h2>Adaptive Chameleon or Stubborn Sloth: Unraveling the Behavior of Large Language Models in Knowledge Conflicts</h2>
+            <div class="project-info">
+              <div class="stack">
+                <small class="language">Jian Xie<i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="" data-original-title="Equal contribution"></i>, Kai Zhang<i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="" data-original-title="Equal contribution"></i>, Jiangjie Chen, Renze Lou, Yu Su (2023)</small>
+                <small class="language">Arxiv Preprint
+                  <a
+                  href="https://github.com/OSU-NLP-Group/LLM-Knowledge-Conflict"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://arxiv.org/abs/2305.13300"
+                  target="_blank"
+                  ><i class="fas fa-solid fa-file-pdf"></i
+                ></a>
+                </small>
+              </div>
             </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Project 2 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Project Two</h3>
-              <p>React, Redux, SASS</p>
-            </div>
 
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+
+
+        <!-- Page 2 -->
+        <article class="project-content">
+          <div class="project-image project-image-one">
+            <img
+              src="../assets/project/project-2.png"
+              alt="Hashnode Clone"
+            />
+            <!-- <a
+              class="btn btn-one"
+              href="https://hashnode-clone-sass.netlify.app/"
+              target="_blank"
+              >Preview Link</a
+            > -->
+          </div>
+
+          <div class="card-content">
+            <h2>QUERT: Continual Pre-training of Language Model for Query Understanding in Travel Domain Search</h2>
+            <div class="project-info">
+              <div class="stack">
+                <small class="language">Jian Xie, Yidan Liang, Jingping Liu, Yanghua Xiao, Baohua Wu, Shenghua Ni</small>
+                <small class="language">KDD 2023                
+                  <a
+                  href="https://github.com/hsaest/QUERT"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href=""
+                  target="_blank"
+                  ><i class="fas fa-solid fa-file-pdf"></i
+                ></a></small>
+
+              </div>
             </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Porject 3 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Project Three</h3>
-              <p>React, Redux, SASS</p>
-            </div>
+        <!-- Page 3 -->
+        <article class="project-content">
+          <div class="project-image project-image-one">
+            <img
+              src="../assets/project/project-3.png"
+              alt="Hashnode Clone"
+            />
+            <!-- <a
+              class="btn btn-one"
+              href="https://hashnode-clone-sass.netlify.app/"
+              target="_blank"
+              >Preview Link</a
+            > -->
+          </div>
 
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+          <div class="card-content">
+            <h2>Improving NER in Social Media via Entity Type-Compatible Unknown Word Substitution</h2>
+            <div class="project-info">
+              <div class="stack">
+                <small class="language">Jian Xie<i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="" data-original-title="Equal contribution"></i>, Kai Zhang<i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="" data-original-title="Equal contribution"></i>, Lin Sun, Yindu Su, Chenxiang Xu</small>
+                <small class="language">ICASSP 2021                
+                  <a
+                  href="https://github.com/hsaest/Entity-Type-Compatible-Unknown-Word-Substitution"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://ieeexplore.ieee.org/document/9414304"
+                  target="_blank"
+                  ><i class="fas fa-solid fa-file-pdf"></i
+                ></a></small>
+
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Project Four</h3>
-              <p>React, Redux, SASS</p>
-            </div>
-
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Project Five</h3>
-              <p>React, Redux, SASS</p>
-            </div>
-
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Project Six</h3>
-              <p>React, Redux, SASS</p>
-            </div>
-
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <a href="#" class="btn btn-secondary"
+        </article>
+      <div class="see-more">
+        <a href="#" class="btn btn-secondary"
         target="_blank" >See More <i class="fas fa-arrow-right"></i
       ></a>
+      </div>
+
     </section>
 
     <footer id="footer">
       <div class="container">
-        <a href="mailto:communitypro47@gmail.com">communitypro47@gmail.com</a>
+        <!-- <a href="mailto:communitypro47@gmail.com">communitypro47@gmail.com</a> -->
         <!-- Social links -->
-        <div class="social">
+        <!-- <div class="social">
           <a href="#" target="_blank"
             ><img src="./assets/facebook-icon.svg" alt="Facebook"
           /></a>
@@ -276,7 +321,7 @@
           <a href="#" target="_blank"
             ><img src="./assets/hashnode-icon.svg" alt="Hashnode"
           /></a>
-        </div>
+        </div> -->
         <!-- Attribution -->
         <div class="attribution">
           <a

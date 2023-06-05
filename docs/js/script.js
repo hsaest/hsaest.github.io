@@ -65,3 +65,10 @@ let myDate = document.querySelector("#datee");
 
 const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
+
+//Adding tooltip initialization
+document.addEventListener("DOMContentLoaded", function(){
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+});

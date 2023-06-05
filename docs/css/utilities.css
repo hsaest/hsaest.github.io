@@ -33,9 +33,11 @@ h2::selection {
 }
 
 .btn-secondary {
+  width: 30%;
   margin: 5px 0;
   background-color: var(--bg-secondary);
   color: var(--bg-primary);
+  text-align: center;
 }
 
 /* add hover to resume button */
@@ -87,7 +89,7 @@ h2::selection {
 }
 
 .content-text {
-  text-align: center;
+  text-align: left;
   margin: 1.5rem 0;
 }
 
@@ -162,6 +164,13 @@ h2::selection {
 /* Project 6 */
 .card:nth-child(6) {
   background: url(../assets/project/project-six.png) center center/cover;
+}
+
+.see-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Media Queries */
