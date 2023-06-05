@@ -106,14 +106,12 @@ body {
   z-index: 20;
   height: 80px;
   width: 100%;
-  
 }
-
 
 .navbar .nav-menu {
   display: flex;
   align-items: center;
-  background: var(--bg-primary);
+  margin-left: auto; /* 将左侧空白处撑满 */
 }
 
 .navbar .nav-link {
@@ -125,7 +123,9 @@ body {
 .navbar #logo img {
   display: block;
   width: 40px;
+  height: 40px;
 }
+
 
 .navbar .btn {
   margin-right: 1.5rem;
@@ -402,7 +402,7 @@ body {
     box-shadow: var(--shadow);
     padding: 2rem;
     border-radius: 5px;
-    align-items: flex-start;
+    align-items: flex-end;
   }
 
   .navbar .btn {
