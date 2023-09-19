@@ -18,6 +18,7 @@
   --card-background: #f4f4f4;
   --global-background: #f7f7f7;
   --bg-secondary-two: #111111;
+  --pj--content-color: #ffffff;
 
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 
@@ -42,6 +43,7 @@
   --global-background: #111111;
   --card-background: #111111;
   --bg-secondary-two: #f4f4f4;
+  --pj--content-color: #333333;
   --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
 }
 
@@ -210,6 +212,7 @@ body {
 }
 
 .project-content {
+  background-color: var(--pj--content-color);
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin: 2rem 0;
