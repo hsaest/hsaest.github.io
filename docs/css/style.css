@@ -56,6 +56,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.archive-container {
+  top: 0%;
+  font-size: 120%;
+  width: 80%;
+  left: 20em;
+
+}
+
+.archive-box {
+  margin-bottom: 2%;
+}
+
 /* Reset default styling */
 * {
   margin: 0;
@@ -164,6 +176,17 @@ body {
   align-items: center; /* 垂直居中 */
   justify-content: center; /* 水平居中 */
 }
+
+#pub-hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 视口高度 */
+  width: 100vw;  /* 视口宽度 */
+  background-color: var(--global-background);
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+}
+
 
 .profile-image {
   width: 150px;
