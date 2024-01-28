@@ -57,11 +57,20 @@ html {
 }
 
 .archive-container {
+<<<<<<< HEAD
   top: 0%;
   font-size: 120%;
   width: 80%;
   left: 20em;
 
+=======
+  /* margin-top: 5%; */
+  margin-top: 6rem;
+  font-size: 120%;
+  width: 80%;
+  left: 20em;
+  /* margin-top: 20rem; */
+>>>>>>> 01057f0d2c58e3f2a4f3f12c7a1d363468c60647
 }
 
 .archive-box {
@@ -170,21 +179,31 @@ body {
 #hero {
   display: flex;
   flex-direction: column;
-  height: 100vh;  /* 视口高度 */
   width: 100vw;  /* 视口宽度 */
   background-color: var(--global-background);
   align-items: center; /* 垂直居中 */
   justify-content: center; /* 水平居中 */
+  margin-top: 3%;
+  /* margin-bottom: 3%; */
 }
 
 #pub-hero {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   height: 100vh; /* 视口高度 */
+=======
+  height: 100%; /* 视口高度 */
+>>>>>>> 01057f0d2c58e3f2a4f3f12c7a1d363468c60647
   width: 100vw;  /* 视口宽度 */
   background-color: var(--global-background);
   align-items: center; /* 垂直居中 */
   justify-content: center; /* 水平居中 */
+<<<<<<< HEAD
+=======
+  margin-top: 3%;
+  /* margin-bottom: 3%; */
+>>>>>>> 01057f0d2c58e3f2a4f3f12c7a1d363468c60647
 }
 
 
@@ -438,6 +457,7 @@ body {
 
   .nav-menu.active {
     right: 20px;
+    background-color: var(--global-background);
   }
 
   .nav-menu .nav-link {
