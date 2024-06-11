@@ -166,6 +166,9 @@ body {
   border-radius: 30px;
   background-color: var(--bg-secondary);
 }
+.content-text{
+  padding: 3%;
+}
 
 /* Hero section */
 #hero {
@@ -249,6 +252,7 @@ body {
   /* background-color: #f7f7f7; */
   /*align-items: center;*/
 }
+
 
 .project-content .project-image {
   /* display: flex; */
@@ -481,6 +485,28 @@ body {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+
+  .project-content {
+    background-color: var(--pj--content-color);
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 2px solid #f7f7f7;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .card-content{
+    padding: 0px;
+  }
+
+  .see-more a{
+    width: 40%
+  }
+
+
 }
 
 @media (max-width: 600px) {
