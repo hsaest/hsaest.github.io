@@ -170,6 +170,11 @@ body {
   padding: 3%;
 }
 
+.content-text ul{
+  height: 200px; /* 设置您想要的高度 */
+  overflow-y: auto; /* 启用垂直滚动 */
+}
+
 /* Hero section */
 #hero {
   display: flex;
