@@ -250,11 +250,14 @@ body {
   display: grid;
   /* grid-template-columns: 2fr 1fr; */
   grid-template-columns: 1fr;
-  margin: 2rem 0;
-  padding: 1rem;
-  border: 2px solid #f7f7f7;
+  text-align: center;
+  /* margin: 2rem 0;
+  padding: 1rem; */
+  /* align-items: center;
+  justify-content: center; */
+  /* border: 2px solid #f7f7f7;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
+  border-radius: 15px; */
   /* background-color: #f7f7f7; */
   /*align-items: center;*/
 }
@@ -300,12 +303,11 @@ body {
 }
 
 .card-content {
-  max-width: 100%; /* 控制最大宽度 */
   padding: 1rem 1.5rem;
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
   /* margin: 0 auto; 居中容器 */
-  text-align: left; /* 文字左对齐 */
-  
+  /* text-align: left; 文字左对齐 */
+  margin:0 auto
 }
 
 .card-content h2,
