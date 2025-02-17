@@ -34,8 +34,8 @@
 }
 
 [data-theme="dark"] {
-  --primary-color: #ffcd42;
-  --secondary-color: #ffd35c;
+  --primary-color: #ffffff;
+  --secondary-color: #ffffff;
   --bg-primary: #000000;
   --text-color: #ffffff;
   --text-color-two: #222222;
@@ -43,7 +43,7 @@
   --global-background: #111111;
   --card-background: #111111;
   --bg-secondary-two: #f4f4f4;
-  --pj--content-color: #333333;
+  --pj--content-color: #111111;
   --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
 }
 
