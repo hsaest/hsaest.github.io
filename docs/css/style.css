@@ -300,18 +300,20 @@ body {
 }
 
 .card-content {
-  max-width: 70%; /* 控制最大宽度 */
+  max-width: 100%; /* 控制最大宽度 */
   padding: 1rem 1.5rem;
   margin-left: 10rem;
   /* margin: 0 auto; 居中容器 */
   text-align: left; /* 文字左对齐 */
-  word-wrap: break-word; /* 确保文本换行 */
+  
 }
 
 .card-content h2,
 .card-content .project-info,
 .card-content .stack {
+  max-width: 650px;
   text-align: left; /* 确保所有文本块左对齐 */
+  word-wrap: break-word; /* 确保文本换行 */
 }
 
 .card-content a {
