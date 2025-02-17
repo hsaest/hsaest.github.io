@@ -300,15 +300,18 @@ body {
 }
 
 .card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  max-width: 70%; /* 控制最大宽度 */
   padding: 1rem 1.5rem;
-  text-align: left; /* 让文本居中 */
-  word-wrap: break-word; /* 确保文本能换行 */
-  overflow-wrap: break-word; /* 同样效果 */
-  max-width: 100%; /* 限制最大宽度，避免文字过长 */
-  margin: 0 auto; /* 居中容器 */
+  margin-left: 10rem;
+  /* margin: 0 auto; 居中容器 */
+  text-align: left; /* 文字左对齐 */
+  word-wrap: break-word; /* 确保文本换行 */
+}
+
+.card-content h2,
+.card-content .project-info,
+.card-content .stack {
+  text-align: left; /* 确保所有文本块左对齐 */
 }
 
 .card-content a {
