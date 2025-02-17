@@ -47,6 +47,10 @@
   --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
 }
 
+small {
+  display: block;
+}
+
 .url {
   color: #3063ba;
 }
@@ -242,6 +246,8 @@ body {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
   margin-bottom: 1rem;
 }
 
@@ -307,7 +313,7 @@ body {
   /* margin-left: 10rem; */
   /* margin: 0 auto; 居中容器 */
   /* text-align: left; 文字左对齐 */
-  margin:0 auto
+  /* margin:0 auto */
 }
 
 .card-content h2,
@@ -443,7 +449,7 @@ body {
 }
 
 @media (max-width: 670px) {
-  .navbar .nav-menu {
+  /* .navbar .nav-menu {
     position: fixed;
     right: -100vw;
     top: 4.5rem;
@@ -480,9 +486,9 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 0.5rem;
-  }
+  } */
 
-  .hamburger {
+  /* .hamburger {
     display: block;
     cursor: pointer;
     padding: 0.2rem 0.4rem;
@@ -502,22 +508,20 @@ body {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
+  } */
 
 
   .project-content {
     background-color: var(--pj--content-color);
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
     padding: 1rem;
-    border: 2px solid #f7f7f7;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
     display: flex;
     flex-flow: column;
   }
 
   .card-content{
     padding: 0px;
+    padding: 1rem 0rem;
   }
 
   .see-more a{
