@@ -9,8 +9,8 @@
 /* variables */
 :root {
   /* Colors */
-  --primary-color: #ffcd42;
-  --secondary-color: #ffd35c;
+  --primary-color: #222222;
+  --secondary-color: #222222;
   --bg-primary: #ffffff;
   --text-color: #222222;
   --text-color-two: #ffffff;
@@ -242,13 +242,14 @@ body {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
-  margin-bottom: 7rem;
+  margin-bottom: 1rem;
 }
 
 .project-content {
   background-color: var(--pj--content-color);
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  /* grid-template-columns: 2fr 1fr; */
+  grid-template-columns: 1fr;
   margin: 2rem 0;
   padding: 1rem;
   border: 2px solid #f7f7f7;
@@ -302,7 +303,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 1.5rem 0 1.5rem ;
+  padding: 1rem 1.5rem;
+  text-align: left; /* 让文本居中 */
+  word-wrap: break-word; /* 确保文本能换行 */
+  overflow-wrap: break-word; /* 同样效果 */
+  max-width: 60%; /* 限制最大宽度，避免文字过长 */
+  margin: 0 auto; /* 居中容器 */
 }
 
 .card-content a {

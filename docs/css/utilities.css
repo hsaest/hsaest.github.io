@@ -8,7 +8,7 @@
 .container {
   max-width: var(--width-medium);
   margin: 0 auto;
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
 }
 
 h1::selection,
