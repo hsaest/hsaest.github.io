@@ -72,3 +72,39 @@ document.addEventListener("DOMContentLoaded", function(){
         $('[data-toggle="tooltip"]').tooltip();   
     });
 });
+
+// Auto-load CV from URL parameter
+function getUrlParameter(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+}
+
+// Check for CV parameter and trigger download/display
+document.addEventListener("DOMContentLoaded", function() {
+    const cvParam = getUrlParameter('cv') || getUrlParameter('showcv');
+    
+    // Check if CV parameter exists and has a valid value
+    if (cvParam !== null && (cvParam === 'true' || cvParam === '1' || cvParam === '')) {
+        // Determine the correct path based on current page location
+        let cvPath;
+        if (window.location.pathname.includes('/publication/')) {
+            cvPath = '../assets/Jian_Xie_CV.pdf';
+        } else {
+            cvPath = 'assets/Jian_Xie_CV.pdf';
+        }
+        
+        // Use window.open for better browser compatibility
+        // This will open the PDF in a new tab/window
+        setTimeout(function() {
+            window.open(cvPath, '_blank');
+            
+            // Clean up URL parameters
+            if (window.history && window.history.replaceState) {
+                const url = new URL(window.location);
+                url.searchParams.delete('cv');
+                url.searchParams.delete('showcv');
+                window.history.replaceState({}, document.title, url.pathname + url.search);
+            }
+        }, 100); // Small delay to ensure page is fully loaded
+    }
+});
