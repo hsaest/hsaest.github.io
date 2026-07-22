@@ -108,3 +108,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 100); // Small delay to ensure page is fully loaded
     }
 });
+
+document.addEventListener("keydown", function (event) {
+    const isTypingTarget =
+        event.target instanceof HTMLInputElement ||
+        event.target instanceof HTMLTextAreaElement ||
+        event.target.isContentEditable;
+
+    if (isTypingTarget) {
+        return;
+    }
+
+    if (event.shiftKey && !event.metaKey && !event.ctrlKey && !event.altKey && event.key.toLowerCase() === "v") {
+        window.open("https://mapmyvisitors.com/web/1c6sd", "_blank", "noopener");
+    }
+});
